@@ -1,0 +1,189 @@
+
+/*Setting the background color of the body*/
+body 
+{
+	background-color:#34495E;
+}
+/*Deciding the size and properties of the elements*/
+.absolute-center,
+.menu,
+.menu .btn .fa,
+.bars 
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+/*Size of the Menu*/
+.menu
+{
+  transition: 2s ease;
+  width: 5em;
+  height: 5em;
+}
+/*All buttons inside the menu*/
+.menu .btn 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  z-index: -10;
+  cursor: pointer;
+  -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
+  transition: opacity 1s, z-index 0.3s, transform 1s;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  background-color:#F1C40F;
+}
+/*All Font Awesome Icons inside the Menu*/
+.menu .btn .fa 
+{
+  font-size: 3em;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+/*On hovering the Icons, color change*/
+.menu .btn:hover .fa { color: rgba(255, 255, 255, 0.7); }
+
+/*Controlling the trigger button in the center*/
+.menu .btn.trigger
+{
+  opacity: 1;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  
+}
+
+.menu:not(:active)
+{
+	width:60px;
+	height:60px;
+}
+.trigger:not(:active)
+{
+	font-size:10px;
+}
+/*Changing the size of the central button upon hover*/
+.menu .btn.trigger:hover 
+{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/*Setting the rotation properties and transformations*/
+.menu .rotater 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.menu.active .btn-icon 
+{
+  background-color:#F1C40F;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+.menu.active
+{
+	width: 5em;
+	height: 5em;
+}
+.rotater:nth-child(1)
+{
+  -webkit-transform: rotate(-22.5deg);
+  -ms-transform: rotate(-22.5deg);
+  transform: rotate(-22.5deg);
+}
+
+.menu.active .rotater:nth-child(1) .btn-icon 
+{
+  -webkit-transform: translateX(-10em) rotate(22.5deg);
+  -ms-transform: translateX(-10em) rotate(22.5deg);
+  transform: translateX(-10em) rotate(22.5deg);
+}
+													/*The Play Icon*/
+.rotater:nth-child(2) 
+{
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.menu.active .rotater:nth-child(2) .btn-icon 
+{
+  -webkit-transform: translateX(-10em) rotate(0deg);
+  -ms-transform: translateX(-10em) rotate(0deg);
+  transform: translateX(-10em) rotate(0deg);
+}
+													/*The Home Icon*/
+.rotater:nth-child(3) 
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.menu.active .rotater:nth-child(3) .btn-icon 
+{
+  -webkit-transform: translateX(-10em) rotate(-90deg);
+  -ms-transform: translateX(-10em) rotate(-90deg);
+  transform: translateX(-10em) rotate(-90deg);
+}
+													/*The Messages Icon*/
+.rotater:nth-child(4) 
+{
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.menu.active .rotater:nth-child(4) .btn-icon 
+{
+  -webkit-transform: translateX(-10em) rotate(-180deg);
+  -ms-transform: translateX(-10em) rotate(-180deg);
+  transform: translateX(-10em) rotate(-180deg);
+}
+
+												/*The Gear-Settings-Cogs Icon*/
+.rotater:nth-child(5)
+ {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.menu.active .rotater:nth-child(5) .btn-icon 
+{
+  -webkit-transform: translateX(-10em) rotate(-270deg);
+  -ms-transform: translateX(-10em) rotate(-270deg);
+  transform: translateX(-10em) rotate(-270deg);
+}
+
+.to_center 
+{
+  top:50%;
+  left:50%;
+}
+.to_top 
+{
+  top:5%;
+  left:4%; 
+}

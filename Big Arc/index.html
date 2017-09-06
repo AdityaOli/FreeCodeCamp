@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="./styles/styles.css" type="text/css"/>
+
+
+<script>
+$(document).ready(function() 
+{
+  
+  var active1 = false;
+  var active2 = false;
+  var active3 = false;
+  var active4 = false;
+
+    $('.radial-menu').on('mousedown touchstart', function() 
+	{
+    
+		if (!active1) $(this).find('.menu-item1').css({'background-color': '#F1C40F', 'transform': 'translate(0px,125px)'});
+		else $(this).find('.menu-item1').css({'transform': 'none'}); 
+		 if (!active2) $(this).find('.menu-item2').css({'background-color': '#F1C40F', 'transform': 'translate(60px,105px)'});
+		else $(this).find('.menu-item2').css({'transform': 'none'});
+		  if (!active3) $(this).find('.menu-item3').css({'background-color': '#F1C40F', 'transform': 'translate(105px,60px)'});
+		else $(this).find('.menu-item3').css({'transform': 'none'});
+		  if (!active4) $(this).find('.menu-item4').css({'background-color': '#F1C40F', 'transform': 'translate(125px,0px)'});
+		else $(this).find('.menu-item4').css({'transform': 'none'});
+		active1 = !active1;
+		active2 = !active2;
+		active3 = !active3;
+		active4 = !active4;
+    });
+	
+	$(".mask").click(function() 
+	  {
+		$(this).find('.menuicon').toggleClass('fa-bars fa-close');
+		$(".fa-close").css({"color":"red"});
+		$(".fa-bars").css({"color": "black"});
+	  });
+	
+});
+</script>
+
+
+</head>
+
+<body>
+
+<div class="radial-menu">
+	<div class="mask">
+			<i class="fa fa-bars fa-2x menuicon"></i>
+	</div>
+	
+	<div class="menu-item4">
+		<a href="https://www.google.com" style="color:black">
+			<i class="fa fa-play-circle-o fa-2x"></i>
+		</a>
+	</div>
+	
+	<div class="menu-item3">
+		<a href="https://www.google.com" style="color:black">
+			<i class="fa fa-cogs fa-2x"></i>
+		</a>
+	</div>
+	
+	<div class="menu-item2">
+		<a href="https://www.google.com" style="color:black">
+			<i class="fa fa-envelope fa-2x"></i>
+		</a>
+	</div>
+	
+	<div class="menu-item1">
+		<a href="https://www.google.com" style="color:black">
+			<i class="fa fa-home fa-2x"></i>
+		</a>
+	</div>
+   
+	
+  
+</div>
+
+</body>
+</html>
