@@ -1,0 +1,34 @@
+.jumbotron
+{
+  text-align:center;
+  margin-top:100px;
+}
+
+#allcircle
+{
+  float:left;
+  color:red;
+}
+#incircle
+{
+  float:left;
+  color:green;
+}
+#offcircle
+{
+  float:left;
+  color:darkgray;
+}
+.optionPane
+{
+    position : fixed;
+}
+#usr
+{
+  width:400px !important;
+}
+.searchBox
+{
+  margin-bottom:10px;
+  display:flex;
+}

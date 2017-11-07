@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid flow-text center-align outerCalcFrame">
+  
+  
+  <div class="row">
+          <div class="card z-depth-2 blue lighten-2">
+            <div class="card-content">
+              <span class="card-title calculatorName"> &infin; Cal-Q-Matic &infin;</span>
+              <hr/>
+              <div class="outputDiv">
+                <div class="answerDiv">
+
+                </div>
+                <hr/>
+                <div class="stackDiv">
+
+                </div>   
+              </div>
+              <hr/>  
+              <br/>
+      <div class="row buttonPanel">
+      
+          <div class="col-lg-3 orange accent-3" id="AC" onclick="displayNumberOnScreen(this)">AC</div>
+          <div class="col-lg-3 orange accent-3" id="CE" onclick="displayNumberOnScreen(this)">CE</div>
+          <div class="col-lg-3" id="/" onclick="displayNumberOnScreen(this)">&#247;</div>
+          <div class="col-lg-3" id="*" onclick="displayNumberOnScreen(this)">&#215;</div>
+          
+          <div class="col-lg-3" id="7" onclick="displayNumberOnScreen(this)">7</div>
+          <div class="col-lg-3" id="8" onclick="displayNumberOnScreen(this)">8</div>
+          <div class="col-lg-3" id="9" onclick="displayNumberOnScreen(this)">9</div>
+          <div class="col-lg-3" id="-" onclick="displayNumberOnScreen(this)">&minus;</div>
+          
+          <div class="col-lg-3" id="4" onclick="displayNumberOnScreen(this)">4</div>
+          <div class="col-lg-3" id="5" onclick="displayNumberOnScreen(this)">5</div>
+          <div class="col-lg-3" id="6" onclick="displayNumberOnScreen(this)">6</div>
+          <div class="col-lg-3" id="+" onclick="displayNumberOnScreen(this)">&plus;</div>
+        
+          <div class="col-lg-3" id="1" onclick="displayNumberOnScreen(this)">1</div>
+          <div class="col-lg-3" id="2" onclick="displayNumberOnScreen(this)">2</div>
+          <div class="col-lg-3" id="3" onclick="displayNumberOnScreen(this)">3</div>
+          <div class="col-lg-3" id="=" onclick="displayNumberOnScreen(this)">&equals;</div>
+        
+           <div class="col-lg-6 light-blue darken-1" id="0" onclick="displayNumberOnScreen(this)">0</div>
+          <div class="col-lg-3" id="." onclick="displayNumberOnScreen(this)">&middot;</div>
+        
+    </div>
+            
+            </div>
+          </div>
+      </div>
+  
+  
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

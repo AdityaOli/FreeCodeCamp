@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Twitch TV</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid">
+  <div class="jumbotron">
+    <h1 align="left">Twitch TV</h1>  
+    <hr/>
+    <div class="searchBox row">    
+      
+      <div id="userBox" align="left"><input type="text" size="35" class="form-control" id="usr"></div>
+      <div id="searchBox" align="left"><button class="btn btn-primary btn-md" id="searchButton"> Search </button></div>
+      
+    </div>
+    <table class="table row">
+      <tbody>
+        <td>
+           <div class="channel-panel">
+                  <div class="panel-group">
+                      <div class="panel panel-default">
+                      </div>
+                  </div>
+            </div>
+          
+        </td>
+          <td>
+                  <div class="optionPane">
+                          <div class="All">
+                              <i class="fa fa-circle" id="allcircle"> All </i> 
+                            </div>
+                            <br/>
+                            <div class="Online">
+                              <i class="fa fa-circle" id="incircle"> Online </i> 
+                            </div>
+                    <br/>
+                            <div class="Offline">
+                              <i class="fa fa-circle" id="offcircle"> Offline </i>
+                            </div>
+                    <br/>
+            </div>
+                  
+          </td>
+      </tbody>
+    </table>
+  </div>      
+</div>
+  
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

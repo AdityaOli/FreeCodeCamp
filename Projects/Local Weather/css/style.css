@@ -1,0 +1,21 @@
+body
+{
+  background-color:lightgray;
+}
+#city,#country,#temp,#desc,h1
+{
+  font-family: 'Rock Salt', cursive;
+}
+#tempunit
+{
+  color:black !important;
+  width:60px;
+}
+#mainRow
+{
+  text-align: center;
+}
+.flash
+{
+  float:right;
+}

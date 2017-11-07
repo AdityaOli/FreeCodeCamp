@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio Webpage</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header text-center">
+      <image class="image-responsive" style="width:15%" src="http://www.newtonsgroveschool.com/img/programs_icon_dress-code.png" alt="Coder"></image>&nbsp;
+      <label><a href="#" style="color:orange; font-size:150%; text-decoration:none; font-family:papyrus;"> Aditya Oli</a></label>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav" style="float:right">
+          <li><a href="#section1">All About Me</a></li>
+          <li><a href="#section2">Portfolio</a></li>
+          <li><a href="#section3">Contact</a></li>
+          <li><a href="#section4">Social</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div id="sections">
+  <div id="section1" class="container-fluid">
+    <h1 class="allaboutme">All About Me</h1>
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <image id="MyPhoto" src="https://secure.gravatar.com/avatar/2d854a99fd00533586ed142f0bda55cd?d=https%3A%2F%2Fi.vimeocdn.com%2Fportrait%2Fdefault-yellow_300x300.png&s=300" class="img-responsive"></image>
+      </div>
+      <div class="col-md-7 col-xs-offset-1 text-center aboutmetext" style="color:orange">
+        <br/>
+        <hr/> My name is Aditya and I am a Web Developer, Systems Engineer and a Computer Science Graduate. To me, coding is like the meditation for the brain. I usually work on C, C++, HTML5, Javascript, Python, jQuery, PHP, MySQL and CSS3.
+        <hr />
+      </div>
+    </div>
+    <br/><br/>
+    <div class="text-center">
+      <div class="skills" style="font-size:200%">
+        Web Developer - Graphic Artist - Content Writer - Knowledge Enthusiast
+      </div>
+    </div>
+  </div>
+  <div id="section2" class="container-fluid" style="font-family:papyrus;">
+    <h1 class="text-center">Portfolio</h1>
+
+    <ul class="photo-grid">
+      <li>
+        <a href="http://www.gogotours.fr/wp-content/uploads/2015/04/Arc_de_triomphe_Paris.jpg">
+          <figure>
+            <img src="https://en.parisinfo.com/var/otcp/sites/images/media/1.-photos/02.-sites-culturels-630-x-405/arc-de-triomphe-de-face-630x405-c-thinkstock/35754-1-fre-FR/Arc-de-Triomphe-de-face-630x405-C-Thinkstock.jpg" height="180" width="320" alt="Arc de Triomphe">
+            <figcaption>
+              <p>Arc de Triomphe</p>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a href="https://1.bp.blogspot.com/-oi_1AVAk8JM/UQfsIE-5f1I/AAAAAAAAjIo/6cBUbKbmRZI/s1600/The-Eiffel-Tower-at-night.jpg">
+          <figure>
+            <img src="https://1.bp.blogspot.com/-oi_1AVAk8JM/UQfsIE-5f1I/AAAAAAAAjIo/6cBUbKbmRZI/s1600/The-Eiffel-Tower-at-night.jpg" height="180" width="320" alt="Eiffel Tower">
+            <figcaption>
+              <p>Eiffel Tower</p>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+      <li>
+        <a href="https://upload.wikimedia.org/wikipedia/commons/b/be/Notre_Dame_dalla_Senna_crop.jpg">
+          <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Notre_Dame_dalla_Senna_crop.jpg" height="180" width="320" alt="Notre Dame">
+            <figcaption>
+              <p>Notre Dame</p>
+            </figcaption>
+          </figure>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div id="section3" class="container-fluid" style="color:orange;font-family:papyrus;">
+    <!-----------------Materialize Contact Form------------------------->
+    <div class="row">
+      <div class="col m10 offset-m1 s12">
+        <h2 class="center-align">Contact Me</h2>
+        <div class="row">
+          <form class="col m8 offset-m2 s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="name" type="text">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="email" type="email" class="form-input">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col m12">
+                <p class="right-align"><button class="btn btn-md waves-effect waves-light" type="button" name="action">Send Message</button></p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!---------------------------------------------------->
+  </div>
+  <div id="section4" class="container-fluid text-center" style="font-family:papyrus; color:orange;">
+    <h2>Around The Web</h2>
+    <div>
+      <div class="container">
+        <hr>
+        <div class="text-center center-block">
+          <p class="txt-railway"></p>
+          <br />
+          <a href="https://www.facebook.com/eradityaoli" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/AdityaOli1" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/115029239446844571187" target="_blank"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:er.aditya.oli@gmail.com" target="_blank"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

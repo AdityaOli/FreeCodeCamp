@@ -1,0 +1,242 @@
+body {
+  position: relative;
+  background-color: gray;
+}
+
+.Portfoliolink {
+  border-color: orange;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.allaboutme {
+  font-family: papyrus;
+  color: orange;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 45%;
+  margin-right: auto;
+}
+
+.skills {
+  font-family: papyrus;
+  color: orange;
+  font-size: 150%;
+}
+
+.aboutmetext {
+  font-family: papyrus;
+  font-size: 150%;
+}
+
+#MyPhoto {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 100px;
+  margin-right: auto;
+  border-radius: 50%;
+  border-color: orange;
+  border-style: solid;
+  border-width: 5px;
+}
+
+#sections {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 60px;
+  margin-bottom-100px;
+}
+
+hr {
+  border: 1px solid orange;
+}
+
+.nav a {
+  font-family: papyrus;
+  font-size: 150%;
+}
+
+#section1 {
+  padding-top: 50px;
+  height: 500px;
+  color: #fff;
+  background-color: #1E88E5;
+}
+
+.main-content {
+  min-height: 330px;
+  width:100%;
+  background: #dbdfe5;
+}
+
+.sidebar-content {
+  min-height: 150px;
+  width:90%;
+  margin-bottom: 30px;
+  background: #b4bac0;
+}
+
+#section2 {
+  padding-top: 50px;
+  height: 500px;
+  color: darkorange;
+  background-color: black;
+}
+
+#section3 {
+  padding-top: 50px;
+  height: 500px;
+  color: orange;
+  background-color: darkblue;
+}
+
+#section4 {
+  padding-top: 50px;
+  height: 400px;
+  color: lightblack;
+  background-color: green;
+}
+
+
+/*           Social Media Controls         */
+
+.social:hover {
+  -webkit-transform: scale(2.0);
+  -moz-transform: scale(2.0) -o-transform: scale(2.0);
+}
+
+.social {
+  -webkit-transform: scale(1.2);
+  /* Browser Variations: */
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  letter-spacing: 15px;
+}
+
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+  color: #3B5998;
+}
+
+#social-tw:hover {
+  color: #4099FF;
+}
+
+#social-gp:hover {
+  color: #d34836;
+}
+
+#social-em:hover {
+  color: #f39c12;
+}
+
+
+
+
+
+
+.photo-grid {
+	margin: 1em auto;
+	max-width: 1106px;
+	text-align: center;
+}
+
+.photo-grid li {
+	display: inline-block;
+	margin: 1em;
+	width: 289px;
+}
+
+.photo-grid img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.photo-grid figure {
+	height: 163px;
+	overflow: hidden;
+	position: relative;
+	width: 289px;
+}
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	vertical-align: middle;
+}
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+.photo-grid img {
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+}
+
+.photo-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption p {
+	-moz-transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	transform: translateY(40px);
+}
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}

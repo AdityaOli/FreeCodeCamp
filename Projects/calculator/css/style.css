@@ -1,0 +1,75 @@
+.outerCalcFrame
+{
+  width:500px;
+  height:800px;
+  margin-top:100px;
+}
+.outputDiv
+{
+  font-family: 'Orbitron', sans-serif;
+  background-color:lightgray;
+  color:black !important;
+  border-radius:5px;
+  height:90px;
+}
+.calculatorName
+{
+  font-size:40px !important;
+  font-family: 'Orbitron', sans-serif;
+}
+.col-lg-6,.col-lg-3
+{
+  font-family: 'Orbitron', sans-serif;
+  cursor:pointer;
+}
+.answerDiv,.stackDiv
+{
+  text-align:right;
+  margin-right:10px;
+}
+hr
+{
+    padding: 0px;
+    margin: 0px;    
+}
+.answerDiv
+{
+  height:60%;
+  font-size:40px;
+}
+br 
+{
+   display: block;
+   margin: 5px 0;
+   line-height:22px;
+   content:" ";
+}
+.buttonPanel
+{
+  margin-left:10px;
+}
+.card
+{
+  width:400px;
+}
+#AC,#CE
+{
+  font-size:23px;
+}
+[class*="col-"] 
+{
+    background-clip: padding-box;
+    border: 1px solid transparent;
+}
+.stackDiv
+{
+  color:gray;
+}
+body
+{
+  background:darkgray;
+}
+.row
+{
+  margin: 0 auto;  
+}
