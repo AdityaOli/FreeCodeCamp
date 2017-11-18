@@ -1,11 +1,36 @@
 =size($height, $width)
-   height     : $height
-   width      : $width
+  height: $height
+  width: $width
+
+div
+  box-sizing: border-box
 
 .jumbotron
-   +size(600px, 600px)
-   float : left
-   margin : 10px
-   
-.container
-   margin-left
+  +size(600px, 600px)
+  float: left
+
+.mainContainer
+  justify-content: center
+  align-items: flex-start
+  margin: 0 auto
+
+#Input
+  float: left
+  margin-left: 15px
+
+#Output
+  float: right
+  margin-right: 15px
+
+.panel-body
+  font-family: 'Spectral SC', serif
+  font-weight: bold
+  font-size: 40px
+
+.panel
+  text-align: center
+
+body
+  height: 100%
+  margin: 0
+  padding: 0
