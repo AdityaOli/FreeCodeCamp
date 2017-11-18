@@ -17,6 +17,7 @@
   font-weight: bold
   border-radius: 25px
   font-size: 40px
+  background-image: url("./images/electric.png")
 
 .panel
   text-align: center
@@ -31,7 +32,16 @@
   +size(60px, 60px)
 
 .jumbotron
-  background: none !important
+  background: white !important
   border: 1px solid black
 
 @import "body_gradient"
+
+@media (min-width: 768px)
+  .container
+    .jumbotron
+      padding-right: 0px
+      padding-left: 3px
+      padding-top: 0px
+      padding-bottom: 0px
+      font-size: 20px
