@@ -8,15 +8,19 @@
       <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css'>
       <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
       <link rel="stylesheet" href="sass/style.min.css">
+      <link rel="shortcut icon" href="images/iron man icon.png" type="image/x-icon">
+      <link rel="icon" href="images/iron man icon.png" type="image/x-icon">
 </head>
 
 <body>
-    <div id="mainContainer">
-      <div class="panel panel-default">
-          <div class="panel-body">Mark III</div>
+    <div class="container container-fluid" id="mainContainer">
+      <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-body">Mark III <img id="ironManIcon" src="images/iron man icon.png" /></div>
+        </div>
+        <div class ="jumbotron innerContainer col-md-6" id="Input"></div>
+        <div class="jumbotron innerContainer col-md-6" id="Output"></div>
       </div>
-      <div class = "jumbotron" id="Input"></div>
-      <div class="jumbotron" id="Output"></div>
     </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>

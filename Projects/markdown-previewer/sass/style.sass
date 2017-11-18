@@ -2,35 +2,36 @@
   height: $height
   width: $width
 
-div
-  box-sizing: border-box
-
-.jumbotron
-  +size(600px, 600px)
-  float: left
-
-.mainContainer
-  justify-content: center
-  align-items: flex-start
-  margin: 0 auto
-
 #Input
+  +size(500px, 450px)
   float: left
-  margin-left: 15px
+  display: inline-block
 
 #Output
+  +size(500px, 450px)
   float: right
-  margin-right: 15px
+  display: inline-block
 
 .panel-body
   font-family: 'Spectral SC', serif
   font-weight: bold
+  border-radius: 25px
   font-size: 40px
 
 .panel
   text-align: center
+  border-radius: 25px
 
-body
-  height: 100%
-  margin: 0
-  padding: 0
+.mainContainer
+  margin-left: 150px
+  text-align: center
+  justify-content: center
+
+#ironManIcon
+  +size(60px, 60px)
+
+.jumbotron
+  background: none !important
+  border: 1px solid black
+
+@import "body_gradient"
